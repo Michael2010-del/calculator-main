@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасибо за заполнение формы</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: black;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+    {% block content %}
+    <h1>Cпасибо за заполнение формы</h1>
+    <p>Ваше имя: {{name}}</p>
+    <p>Ваша электронная почта: {{email}}</p>
+    <p>Ваше адрес: {{address}}</p>
+    <p>Ваше дата: {{date}}</p>
+    
+    {% endblock     %}
+</body>
+</html>
